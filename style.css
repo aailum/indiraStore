@@ -1,0 +1,532 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Libre Baskerville", serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(-180deg, #1e596b, #54c283);
+}
+
+header{
+    height: 100vh;
+    background-image: url(img/karly-santiago-E7zsz8JA8FM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+.head{
+    background-color: rgba(255, 255, 255, 0.179);
+    color:#1e596b;
+    width: 20%;
+    height: 18%;
+    padding: 20px;
+    margin: auto;
+    position: absolute;
+    text-align:center;
+    left: 49%;
+    top: 45%;
+    -ms-transform: translate(-50%, -50%) ;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+    border-radius: 15px;
+    box-shadow: 1px 1px 1.5px 1.5px rgba(0, 0, 0, 0.918);
+}
+
+.head h1{
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 50px; 
+    text-shadow: 0.5px 0.5px 3px #000000e8;
+}
+
+.head p{
+    color: #292929;
+    margin-top: 2px;
+    font-size: 15px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 1.5px;
+    font-weight: bold;
+}
+
+/*-------------------------------------Nav--------------------------------------------*/
+nav {
+    position: fixed;
+    width: 100%;
+    height: 3vw;
+    background-color: #1e596b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*transition: transform .3s ease-in-out;
+    transform: translateY(-160%);*/
+    top:0;
+    align-items: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.712);
+    z-index: 1;
+}
+
+/*
+header:hover nav{
+    transform: translateX(-61%);
+}*/
+
+.nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    margin: 0 50px 0 50px;
+}
+
+nav a:hover {
+    background-color: #ffffffbf;
+    color: #000;
+}
+
+/*----------------------------------Talleres-------------------------------------*/
+
+main{
+    max-width: 950vh;
+    padding: 5px;
+    margin: 0 20px 0 20px;
+}
+
+section {
+    padding: 15px;
+    margin: 30px;
+    border-radius: 8px;
+}
+
+.contenedor h2{
+    text-align: center;
+}
+
+
+
+section h2 {
+    color: rgb(245, 247, 250);
+    font-size: 35px;
+    margin-top: 3px;
+    text-shadow: 0.5px 0.5px 3px #000000e8;
+}
+
+section p {
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.clases, .videos, #contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+  
+.clase{
+    flex: 1;
+    margin: 10px;
+    background: #ccedf7d6;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    text-align: center;
+}
+
+
+.clase h3, .clase p{
+    margin: 7px 0px 10px 0px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 25px;
+    color: #1e596b;
+    text-shadow: 0.5px 0.5px 0.5px #000000e8;
+}
+.clase button{
+    margin: 7px 2px 7px 2px;
+    width: 50%;
+    background: #1e596b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 7px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.clase button:hover{
+    background-color: #113d4b;
+}
+
+img{
+    margin-top: 3px;
+    width: 100%; 
+    height:350px;  
+    object-fit: cover;   
+ 
+}
+
+/*----------------------------------------Reseñas-----------------------------------------*/
+
+.comentarios{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px
+
+}
+
+.stars{
+    min-height: 20px;
+    color: #54c283;
+    background-color: #1e596b;
+    padding: 3px;
+}
+
+
+
+.comentario{
+    min-height: 200px;
+    border-radius: 10px;
+    background-color: #ccedf7d6;
+    text-align: center;
+    padding: 8px;
+}
+
+.comentario h3{
+    margin-top: 5px;
+}
+
+.comentario p{
+    color: #292929;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.comentario #texto{
+    color: #000;
+    margin-top: 30px;
+
+}
+
+
+
+
+/*-----------------------------------Tutoriales----------------------------------------------*/
+.videos{
+    margin-top: 10px;
+}
+iframe{
+    flex:1;
+    border-radius: 5px;
+    margin: 5px;
+    border-color: #1e596b;
+    border-width: 5px;
+}
+
+#tutorial h2, p{
+    margin: 2px 0;
+}
+
+
+/*---------------------------------Contacto-------------------------------------*/
+#contacto{
+   /* box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.5);*/
+   border: #1e596b8b;
+   border-style: solid;
+   border-width: 2px;
+   background-color: #ccedf7d6;
+}
+
+.titulo{
+    margin-left: 20px;
+}
+
+.titulo h2{
+    border-radius: 15px;
+    flex: 1;
+    padding: 40px 2px;
+    text-shadow: 1px 1px 2px rgb(4, 4, 4), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+}
+
+.titulo p{
+    margin-top: 5px;
+    color: #262525;
+}
+
+form{
+    flex:1;
+    font-size: 13px;
+    height: 230px;
+    justify-items: center;
+    border-radius: 8px;
+    margin-left: 20px;
+    padding: 0px 0px;
+}
+
+
+form label, input, textarea{
+    width: 100%;
+    margin:3px;
+   
+}
+
+form input, textarea{
+    background-color:#1e596b8b;
+    border-radius: 5px;
+    border:none;
+    border-bottom: 2px solid #000;  
+}
+
+form input{
+    height: 30px;  
+    
+}
+
+
+form label{
+    font-weight: bold;
+    color: #292929;
+    font-size: 13px;
+    
+}
+
+form textarea{
+    resize: none;
+    height: 60px;
+}
+
+#boton{
+    background: #1e596b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 8px;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+#boton:hover{
+    background-color: #113d4b;
+}
+
+/*-------------------------footer-----------------------------*/
+footer {
+    background-color: #1e596b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+    width: 100%;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+/*---------------------Responsive---------------------------------*/
+
+@media all and (min-width: 769px) and (max-width:1200px) {
+
+    nav {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+
+
+
+
+    nav a{
+        margin: 20px 0px
+
+    }
+
+    nav a:hover {
+        width: 100%;
+    }
+
+    .titulo{
+        margin-bottom: 15px;
+    }
+
+    .head{
+        width: 24%;
+        height: 14%;
+        top: 45%;
+        padding: 10px;
+    }
+
+    .head h1{
+        font-size: 35px; 
+
+    }
+
+    .head p{
+        font-size: 13px;
+        
+    }
+    
+
+}
+
+
+@media (max-width: 768px) { 
+    nav {
+        position: fixed;
+        width: 100%;
+        height: 5vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav a{
+        margin: -10px;
+    }
+    
+
+    .head{
+        width: 25%;
+        height: 14%;
+        top: 45%;
+        padding: 10px;
+    }
+
+    .head h1{
+        font-size: 28px; 
+
+    }
+
+    .head p{
+        font-size: 13px;
+        
+    }
+    
+    .clases{
+        flex-direction: column;
+    }
+
+    .clase button{
+        width: 30%;
+        font-size: 15px;
+    }
+
+    .titulo{
+        width: 50%;
+    }
+
+    #boton{
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width:600px){
+
+    nav{
+        height: 100%;
+        width: 30vw;
+        top: 0;
+        left: 0;
+        display: flex;
+        transform: translateX(-110%);
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+   
+    header:hover nav{
+        transform: translateX(0%);
+    }
+
+    .clases{
+        flex-direction: column;
+    }
+
+    .titulo{
+        margin-bottom: 15px;
+        margin-left: -10px;
+        width: 50%;
+    }
+
+    .head{
+        width: 35%;
+        height: 14%;
+        top: 45%;
+        padding: 10px;
+    }
+
+    .head h1{
+        font-size: 35px; 
+
+    }
+
+    .head p{
+        font-size: 13px;
+        
+    }
+
+
+    nav a{
+        margin: 20px 0px
+
+    }
+
+    nav a:hover {
+        width: 100%;
+    }
+    
+    form{
+        margin-left: 5px;
+        
+    }
+
+    #boton{
+        width: 100%;
+    }
+}
