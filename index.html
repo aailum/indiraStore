@@ -134,19 +134,19 @@
             <h2>Contacto</h2>
                 <p>Dejanos tu consulta y nosotros te contactamos!</p>
             </div>
-            <form>
-                <div class="formulario">
+            <form action="https://formspree.io/f/xrbgaoel" method="post">
+                <fieldset>
                     <label>Nombre Completo</label>
-                    <input type="text" name="" id="nombre" required>
+                    <input type="text" name="name" id="nombre" required>
                         
                     <label>Correo</label>
-                    <input type="text" name="" id="mail" required>
+                    <input type="email" name="email" id="mail" required>
                     <label>Mensaje</label>
-                    <textarea name="" id="mensaje"  rows="5" maxlength="200" required></textarea>
+                    <textarea name="message" id="mensaje"  rows="5" maxlength="200" required></textarea>
                         
 
                     <button type="submit" id="boton" align="center">Enviar</button>
-                </div>
+                </fieldset>
             </form>
         </section>
 

@@ -267,7 +267,6 @@ iframe{
 
 /*---------------------------------Contacto-------------------------------------*/
 #contacto{
-   /* box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.5);*/
    border: #1e596b8b;
    border-style: solid;
    border-width: 2px;
@@ -300,6 +299,9 @@ form{
     padding: 0px 0px;
 }
 
+fieldset{
+    border: none;
+}
 
 form label, input, textarea{
     width: 100%;
